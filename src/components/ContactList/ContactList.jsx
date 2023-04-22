@@ -49,7 +49,6 @@ export const ContactList = () => {
           key={contact.id}
           name={contact.name}
           number={contact.number}
-          id={contact.id}
           onDelete={() => handleDeleteContact(contact.id)}
         />
       ))}
