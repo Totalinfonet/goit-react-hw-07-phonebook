@@ -1,9 +1,11 @@
+import Notiflix from 'notiflix';
 import PropTypes from 'prop-types';
 import { Li, DeleteButton } from './ContactItem.styled';
 
 export const ContactItem = ({ name, number, onDelete }) => {
   const handleDelete = () => {
     onDelete();
+    Notiflix.Notify.warning(`${name} has been removed from contacts.`);
   };
 
   return (

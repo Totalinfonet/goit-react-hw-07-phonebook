@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Notiflix from 'notiflix';
 import { useDispatch, useSelector } from 'react-redux';
 import { addContact } from '../../redux/operations';
 import { FormWrapper, Input, Label, Button } from './ContactForm.styled';
@@ -31,6 +32,7 @@ export const ContactForm = () => {
     }
 
     dispatch(addContact({ name, number }));
+    Notiflix.Notify.success(`${name} has been added to contacts.`);
     setName('');
     setNumber('');
   };
