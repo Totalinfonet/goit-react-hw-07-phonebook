@@ -10,7 +10,7 @@ export const Li = styled.li`
 
 export const DeleteButton = styled.button`
   border: none;
-  background-color: blueviolet;
+  background-color: royalblue;
   color: #fff;
   padding: 8px;
   border-radius: 4px;
@@ -18,7 +18,7 @@ export const DeleteButton = styled.button`
   transition: all 0.3s ease;
 
   &:hover {
-    background-color: #f44336;
+    background-color: orangered;
   }
 
   &:active {
